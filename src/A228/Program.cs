@@ -1,0 +1,1 @@
+﻿Console.WriteLine(4 - new HashSet<string>(Console.ReadLine().Split()).Count());
