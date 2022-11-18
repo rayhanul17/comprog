@@ -1,5 +1,4 @@
-﻿//Accepted
-public class A486
+﻿public class A486
 {
     public static void Main(string[] args)
     {
