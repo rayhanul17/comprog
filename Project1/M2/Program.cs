@@ -20,14 +20,17 @@ public class Solution
             l1 = l1?.next;
             l2 = l2?.next;
         }
-        string n = (int.Parse(s1) + int.Parse(s2)).ToString();
+        string n = (Convert.ToUInt32(s1) + Convert.ToUInt32(s2)).ToString();
         ListNode listNode = new ListNode();
-        for(int i = n.Length-1; i >= 0; i--)
+        ListNode pointer = listNode;
+        for(int i = n.Length-1; i > 0; i--)
         {
-
+            pointer.val = (int)Convert.ToUInt32(n[i].ToString());
+            pointer.next = new ListNode();
+            pointer = pointer.next;
         }
-
-        return null;
+        pointer.val = (int)Convert.ToUInt32(n[0].ToString());
+        return listNode;
     }
 }
 
