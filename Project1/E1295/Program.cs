@@ -2,12 +2,11 @@
 {
     public int FindNumbers(int[] nums)
     {
-        int count = 0;
+        int c = 0;
         foreach (int x in nums)        
             if ((Math.Floor(Math.Log10(x)) + 1) % 2 == 0)
-                count++;
-        
-        return count;
+                c++;        
+        return c;
     }
 }
 public class Program
